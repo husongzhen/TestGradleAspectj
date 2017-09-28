@@ -16,5 +16,8 @@ public class MainActivity extends Activity {
     public void onSecondButtonClicked(View view) {
 //        Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
 //        showName();
+
+        MainActivity.setText(this);
+
     }
 }
