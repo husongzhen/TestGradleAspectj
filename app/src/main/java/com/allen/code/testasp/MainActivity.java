@@ -3,7 +3,6 @@ package com.allen.code.testasp;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -18,6 +17,10 @@ public class MainActivity extends Activity {
 //        showName();
 
 //        MainActivity.setText(this);
+        sigleton();
+    }
 
+    private User sigleton() {
+        return User.news();
     }
 }
