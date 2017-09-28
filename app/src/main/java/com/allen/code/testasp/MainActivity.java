@@ -17,7 +17,7 @@ public class MainActivity extends Activity {
 //        Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
 //        showName();
 
-        MainActivity.setText(this);
+//        MainActivity.setText(this);
 
     }
 }
