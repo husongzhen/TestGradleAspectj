@@ -3,8 +3,6 @@ package xpoint;
 
 import android.util.Log;
 
-import com.allen.code.testasp.MainActivity;
-
 import java.util.Hashtable;
 
 /**
@@ -12,7 +10,7 @@ import java.util.Hashtable;
  * 邮箱：husongzhen@musikid.com
  */
 aspect SigletonsAsp {
-    private final Hashtable sigletons = new Hashtable();
+    private  final Hashtable sigletons = new Hashtable();
 
     pointcut singletonNews(): call(* *.news());
 
@@ -22,13 +20,9 @@ aspect SigletonsAsp {
         synchronized (sigletons){
             if (sigletons.get(singleton) == null) {
                 sigletons.put(singleton, proceed());
-
             }
-
         }
-
         Log.e("log", sigletons.size() + "");
-
         return sigletons.get(singleton);
     }
 }
