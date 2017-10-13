@@ -6,9 +6,9 @@
     tools:context="com.allen.code.testasp.MainActivity">
 
     <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onSecondButtonClicked"
         android:text="Hello World!"/>
 
 </LinearLayout>
